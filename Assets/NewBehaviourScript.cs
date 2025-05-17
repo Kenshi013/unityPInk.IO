@@ -46,7 +46,7 @@ public class Test : MonoBehaviour
                 
                 Rigidbody a = Instantiate(bullet,point.position,Quaternion.identity).GetComponent<Rigidbody>();
                 Vector3 s = pos.forward * 9;
-                a.AddForce(s, ForceMode.Force);
+                a.AddForce(s);
             }
 
         }
